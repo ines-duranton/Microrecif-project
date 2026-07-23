@@ -54,6 +54,8 @@ This separation makes each module responsible for a single concern and simplifie
 
 Simulation : starts by reading the input file if there is one and checks its validity. During the simulation, it handles the updates (movement, birth and death of entities), the drawings of the entities and the writing of output files when required.
 
+Shape : defines all functions related to the geometry of the points, vectors and segments (segments intersection, distance computation, ...)
+
 Message : module in charge of displaying standardized error messages for an incorrect reading of the input files.
 
 ---
