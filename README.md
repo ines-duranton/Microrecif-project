@@ -64,9 +64,9 @@ Message : module in charge of displaying standardized error messages for an inco
 
 ## Technologies
 
-Language: C++17
-GUI: GTKmm
-Build system: Make
+Language: C++17  
+GUI: GTKmm  
+Build system: Make  
 Paradigms: Object-Oriented Programming, modular design
 
 ---
