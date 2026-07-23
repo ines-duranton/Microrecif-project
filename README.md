@@ -52,7 +52,7 @@ Simulation
 This separation makes each module responsible for a single concern and simplifies maintenance and testing.
 !!!explanation of each module, in a separate section ?
 
-Simulation : handles the simulation updates, the visual drawings of the entites, the reading of potential input files and the writing of output files.
+Simulation : starts by reading the input file if there is one and checks its validity. During the simulation, it handles the updates (movement, birth and death of entities), the drawings of the entities and the writing of output files when required.
 
 ---
 
