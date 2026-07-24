@@ -2,6 +2,8 @@
 
 ## Overview
 
+!!!Add some pictures
+
 Microrécif is a C++ simulation engine modelling the evolution of an artificial ecosystem with corals, algae and scavengers. It was realized for an Object-Oriented programming class at EPFL, in the spring of 2023. in the context of this class, the project was created without AI to understand some key software engineering challenges : 
 
 - modular software architecture
