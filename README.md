@@ -14,7 +14,9 @@ The ecosystem modelled contains three different types of entities :
 - the algae are represented by green circles. They are randomly generated if the generation is activated, and die after a certain number of steps.
 - the corals are represented by blue segments. They are made of different arms, with the last arm that can rotate without colliding with the other corals. This last arm can eat algae if it encounters some. By doing so, it either grows or stops rotating and forms a new arm for the coral.
 - the scavengers are represented by red circles. Their goal is to eat the corals. At each step, they can move towards the body of the closest coral in the simulation. When they reach it, they start eating the coral, following its arms. By eating it, they grow in size and form a new small scavenger when they get too big. They also have a limited lifetime, and die after a certain amount of steps.
+
 The simulation can be started with no input files, or with an input files that determines the entities present at the beginning.
+
 The application includes a GTKmm graphical interface allowing users to visualize the entities and interact with the simulation. The simulation can be done step by step or continuously, with or without random algae generation. The user can also create an output file containing the current simulation state.
 
 ---
