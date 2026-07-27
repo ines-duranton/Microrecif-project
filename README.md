@@ -86,8 +86,6 @@ GUI    │
 
 This separation makes each module responsible for a single concern and simplifies maintenance and testing.
 
-!!!explanation of each module, in a separate section ?
-
 Projet : reads the input file if there is any and starts the simulation
 
 Simulation : starts by reading the input file if there is one and checks its validity. During the simulation, it handles the updates (movement, birth and death of entities), the drawings of the entities and the writing of output files when required.
@@ -100,11 +98,9 @@ Shape : defines all functions related to the geometry of the points, vectors and
 
 Message : module in charge of displaying standardized error messages for an incorrect reading of the input files.
 
-Graphic : 
+Graphic : defines the methods to draw the basic shapes needed in simulation (line, circle, ...)
 
 ---
-
-!!!Explain how to start this project
 
 ## Technologies
 
@@ -128,30 +124,24 @@ This project required implementing:
 
 ---
 
-## Build
+## Starting the project
 
-!!!make better explanations and presentation
+The first step is to build the makefile out of all the files that are in the project, with the following command in the terminal :
 
 ```bash
 make
 ```
 
-Run
+The second step is to start the project with its input file : 
 
 ```bash
 ./projet example.txt
 ```
 
+The project can also be started without an input file, with the command :
+
+```bash
+./projet
+```
+
 ---
-
-## Why this project?
-
-!!!to modify
-
-Although the simulated environment is a coral ecosystem, the software architecture and algorithms are directly applicable to robotics software:
-
-- environment simulation
-- geometric reasoning
-- collision handling
-- modular software development
-- event-driven systems
