@@ -85,9 +85,14 @@ GUI    │
 ```
 
 This separation makes each module responsible for a single concern and simplifies maintenance and testing.
+
 !!!explanation of each module, in a separate section ?
 
+Projet : reads the input file if there is any and starts the simulation
+
 Simulation : starts by reading the input file if there is one and checks its validity. During the simulation, it handles the updates (movement, birth and death of entities), the drawings of the entities and the writing of output files when required.
+
+GUI : 
 
 Shape : defines all functions related to the geometry of the points, vectors and segments (segments intersection, distance computation, ...)
 
