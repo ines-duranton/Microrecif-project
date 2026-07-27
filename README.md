@@ -94,11 +94,13 @@ Simulation : starts by reading the input file if there is one and checks its val
 
 GUI : creates the drawing area, the general layout of the window and the different buttons that are present in it.
 
-Lifeform : 
+Lifeform : defines the three entities, their attributes and their associated methods that access and modify their parameters at each step.
 
-Shape : defines all functions related to the geometry of the points, vectors and segments (segments intersection, distance computation, ...)
+Shape : defines all functions related to the geometry of the points, vectors and segments (segments intersection, distance computation, ...).
 
 Message : module in charge of displaying standardized error messages for an incorrect reading of the input files.
+
+Graphic : 
 
 ---
 
