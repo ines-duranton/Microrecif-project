@@ -92,7 +92,9 @@ Projet : reads the input file if there is any and starts the simulation
 
 Simulation : starts by reading the input file if there is one and checks its validity. During the simulation, it handles the updates (movement, birth and death of entities), the drawings of the entities and the writing of output files when required.
 
-GUI : 
+GUI : creates the drawing area, the general layout of the window and the different buttons that are present in it.
+
+Lifeform : 
 
 Shape : defines all functions related to the geometry of the points, vectors and segments (segments intersection, distance computation, ...)
 
