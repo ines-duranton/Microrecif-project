@@ -19,15 +19,34 @@ The simulation can be started with no input files, or with an input files that d
 
 The application includes a GTKmm graphical interface allowing users to visualize the entities and interact with the simulation. The simulation can be done step by step or continuously, with or without random algae generation. The user can also create an output file containing the current simulation state.
 
-<p align="center">
-  <img src="images/image1.png" alt="Image 1" width="200">
-  <img src="images/image2.png" alt="Image 2" width="200">
-</p>
+The following picture represents four different states of the same simulation, started with an input file :
 
-<p align="center">
-  <img src="images/image3.png" alt="Image 3" width="200">
-  <img src="images/image4.png" alt="Image 4" width="200">
-</p>
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="Image1.png" alt="Image 1" width="220">
+    </td>
+    <td align="center">
+      <img src="Image2.png" alt="Image 2" width="220">
+    </td>
+  </tr>
+  <tr>
+    <td align="center">Initial state</td>
+    <td align="center">30th update</td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="Image3.png" alt="Image 3" width="220">
+    </td>
+    <td align="center">
+      <img src="Image4.png" alt="Image 4" width="220">
+    </td>
+  </tr>
+  <tr>
+    <td align="center">60th update</td>
+    <td align="center">90th update</td>
+  </tr>
+</table>
 
 ---
 
@@ -48,21 +67,21 @@ The application includes a GTKmm graphical interface allowing users to visualize
 
 The project is organised into different independent modules:
 
-!!!review that tree
-
 ```
-GUI
- │
- ▼
-Simulation
- │
- ├── Lifeforms
- │     ├── Coral
- │     ├── Algae
- │     └── Scavenger
- │
- ├── Shape
- └── Graphic
+  projet
+ │     │
+GUI    │
+│ │    │
+│ simulation ───────├
+│  │      │         │
+│  │    lifeform    │
+│  │      │    │    │
+│   Message    │    │
+│              │    │
+│               shape
+│                 │
+└──────────── graphic
+
 ```
 
 This separation makes each module responsible for a single concern and simplifies maintenance and testing.
